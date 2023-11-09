@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg p-5">
+        <div class="container justify-content-between">
+          <a class="navbar-brand d-flex" href="#">
+            <div><img src="./imges/logo@2x.png" alt="logo" class="w-75" /></div>
+            <div class="brand-name">
+              <h1>Weather</h1>
+              <p>tagline goes here</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white me-5 rounded-pill px-3"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white me-5 rounded-pill px-3"
+                  aria-current="page"
+                  href="#"
+                  >News</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white me-5 rounded-pill px-3"
+                  aria-current="page"
+                  href="#"
+                  >Live cameras</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white me-5 rounded-pill px-3"
+                  aria-current="page"
+                  href="#"
+                  >Photos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white me-5 rounded-pill px-3"
+                  aria-current="page"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="hero p-5">
+        <div class="container">
+          <form class="find-location position-relative">
+            <input
+              type="text"
+              placeholder="Find your location..."
+              id="search"
+              class="form-control rounded-pill"
+            />
+            <input
+              type="button"
+              value="Find"
+              id="submit"
+              class="btn btn-primary rounded-pill px-5"
+            />
+          </form>
+          <div class="dropdown open mt-3">
+            <button
+              class="btn btn-outline-dark text-white dropdown-toggle"
+              type="button"
+              id="triggerId"
+              data-bs-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded=""
+            >
+              Days
+            </button>
+            <div
+              class="dropdown-menu bg-dark-subtle text-white"
+              aria-labelledby="triggerId"
+            >
+              <button class="dropdown-item" value="2">2</button>
+              <button class="dropdown-item" value="3">3</button>
+              <button class="dropdown-item" value="4">4</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-relative">
+        <div class="container">
+          <table
+            class="table table-striped-columns rounded-3 w-100 forecast-table"
+          >
+            <thead>
+              <tr>
+                <th>
+                  <div class="d-flex justify-content-between">
+                    <span>Saturday</span> <span>25February</span>
+                  </div>
+                </th>
+                <th>
+                  <div class="d-flex justify-content-between">
+                    <span>Saturday</span> <span>25February</span>
+                  </div>
+                </th>
+                <th>
+                  <div class="d-flex justify-content-between">
+                    <span>Saturday</span> <span>25February</span>
+                  </div>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td class="p-4 mx-4">
+                  <div>
+                    <div class="location">Cairo</div>
+
+                    <div
+                      class="degree d-flex align-items-center justify-content-around"
+                    >
+                      <div class="num text-white">19<sup>o</sup>C</div>
+
+                      <div class="forecast-icon my-5">
+                        <img
+                          src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="custom my-5">Partly cloudy</div>
+                    <div class="wind-info d-flex mt-5">
+                      <span class="d-flex mx-2">
+                        <i class="fa fa-umbrella" aria-hidden="true"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-compass"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 mx-4">
+                  <div>
+                    <div class="location">Cairo</div>
+
+                    <div
+                      class="degree d-flex align-items-center justify-content-around"
+                    >
+                      <div class="num text-white">19<sup>o</sup>C</div>
+
+                      <div class="forecast-icon my-5">
+                        <img
+                          src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="custom my-5">Partly cloudy</div>
+                    <div class="wind-info d-flex mt-5">
+                      <span class="d-flex mx-2">
+                        <i class="fa fa-umbrella" aria-hidden="true"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="mx-1">20km/h</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-compass"></i>
+                        <p class="mx-1">NNA</p></span
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td class="p-4 mx-4">
+                  <div>
+                    <div class="location">Cairo</div>
+
+                    <div
+                      class="degree d-flex align-items-center justify-content-around"
+                    >
+                      <div class="num text-white">19<sup>o</sup>C</div>
+
+                      <div class="forecast-icon my-5">
+                        <img
+                          src="https://cdn.weatherapi.com/weather/64x64/day/116.png"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="custom my-5">Partly cloudy</div>
+                    <div class="wind-info d-flex mt-5">
+                      <span class="d-flex mx-2">
+                        <i class="fa fa-umbrella" aria-hidden="true"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                      <span class="d-flex mx-2">
+                        <i class="fa-solid fa-compass"></i>
+                        <p class="mx-1">20%</p></span
+                      >
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="find-location position-relative">
+              <input
+                type="text"
+                placeholder="Enter your e-mail to subscribe"
+                class="form-control rounded-pill"
+              />
+              <input
+                type="button"
+                value="Subscribe"
+                id="submit"
+                class="btn btn-primary rounded-pill px-5"
+              />
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="mt-3">
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

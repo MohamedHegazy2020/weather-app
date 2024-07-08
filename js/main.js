@@ -4,7 +4,6 @@ let noOfDays = document.querySelectorAll(".dropdown-item");
 let days =3;
 let searchrdCity = "cairo";
 
-getWeather(searchrdCity, days);
 const weekday = [
 	"Sunday",
 	"Monday",
@@ -18,7 +17,6 @@ const weekday = [
 const d = new Date();
 // console.log(d.getDay());
 
-getDays();
 
 function getDays() {
   let d
@@ -26,13 +24,15 @@ function getDays() {
 		day.addEventListener("click", function () {
 			d = Number(this.value);
       getWeather(searchrdCity , d)
-			// console.log(days);
-		});
-	}
-  // return d;
-  days =d
+	});
+}
+// return d;
+days =d
+console.log(days);
 
 }
+getDays();
+
 
 find.addEventListener("click", function () {
 	console.log(city.value);
@@ -117,3 +117,4 @@ function displayWeather(r) {
 	document.querySelector(".forecast-table thead tr ").innerHTML = headerCell;
 	document.querySelector(".forecast-table tbody tr ").innerHTML = bodyCell;
 }
+getWeather(searchrdCity, days);

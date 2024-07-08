@@ -17,6 +17,7 @@ const weekday = [
 const d = new Date();
 // console.log(d.getDay());
 
+getDays();
 
 function getDays() {
   let d
@@ -31,8 +32,6 @@ days =d
 console.log(days);
 
 }
-getDays();
-
 
 find.addEventListener("click", function () {
 	console.log(city.value);

@@ -35,6 +35,7 @@ function getDays() {
 }
 
 find.addEventListener("click", function () {
+	console.log(city.value);
 	searchrdCity = city.value;
 	search(searchrdCity);
 });
@@ -56,7 +57,7 @@ function search(x) {
 async function getWeather(c, d) {
 	let weatherReq = await fetch(
 		`http://api.weatherapi.com/v1/forecast.json?key=3c3be09e214847aeb22182734232702&q=${c}&aqi=yes&days=${d}`
-	);
+	).catch((err)=>console.log(err))
 
 	let res = await weatherReq.json();
 	console.log(res);
